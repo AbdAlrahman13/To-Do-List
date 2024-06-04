@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:gold;
+        }
+        .container .form{
+             background-color: rgba(128, 128, 128, 0.635);
+             text-align: center;
+             padding:10px;  
+             border-radius: 10px;     
+             position: relative;
+        }
+        .container .form .input{
+            width: 60%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            color: grey;
+            font-size: 30px;
+            margin:0 10px;
+
+
+        }
+        .container .form .input:focus{
+            outline: none;
+        }
+        .container .form .add{
+            padding: 15px 20px;
+            background-color: rgba(255, 0, 0, 0.594);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            /* font-weight: bold; */
+            cursor: pointer;
+            position: absolute;
+            font-size: 20px;
+            top: 12px;
+
+        }
+        .tasks{
+            background-color: rgba(128, 128, 128, 0.55);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .tasks .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+
+        .done{
+            opacity: 0.5;
+        }
+
+
+    </style>
+    <body>
+       <div class="container">
+        <div class="form">
+            <input type="text" class="input">
+            <input type="submit" class="add" value="Add Task">
+        </div>
+        <div class="tasks">
+
+        </div>
+       </div>
+
+        <script src="main.js"></script>
+
+    </body>
+</html>
